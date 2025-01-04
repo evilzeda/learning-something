@@ -2,9 +2,9 @@ import numpy as np
 
 a = np.array([1,2,3,4,5,6,7,8,9,10])
 
-print(f"Printing a:\n{a}")
-print(f"Printing a type:\n{type(a)}")
-print(f"Printing a type:\{a[1]}")
+print(f"Printing a:\n{a}\n")
+print(f"Printing a type:\n{type(a)}\n")
+print(f"Printing a type:\{a[1]}\n")
 
 b = np.array([i for i in range(1,10)] )
 
@@ -58,10 +58,10 @@ h = np.zeros((2,3,4))
 print(h)
 
 i = np.ones((2,3,4))
-print(f"Printing i variable:\n{i}")
+print(f"Printing i variable:\n{i}\n")
 
 j = np.empty((2,3,4))
-print(f"Printing j variable:\n{j}")
+print(f"Printing j variable:\n{j}\n")
 
 x_values = np.arange(0, 100, 5)
 print(x_values)
@@ -79,7 +79,27 @@ l2 = [j for j in range(6,11)]
 
 a1 = np.array(l1)
 a2 = np.array(l2)
+a3 = 3
+print(f"Print l1 times 2 value:\n{l1*2}\n")
+print(f"Print a1 times 2 value:\n{a1*2}\n")
 
-print(f"Print l1 times 2 value:\n{l1*2}")
-print(f"Print a1 times 2 value:\n{a1*2}")
+# print(l1 - l2)
+# print(a3*l1 - l2)
+# print(a3*l1 + l2)
+print(f"Print a3*a1 value:\n{a3*a1}\n")
+print(f"Print sqrt(a1) value:\n{np.sqrt(a1)}\n")
+print(f"Print a3*a1 - a2 value:\n{a3*a1 - a2}\n")
+print(f"Print a3*a1 + a2 value:\n{a3*a1 + a2}\n")
+print(f"Print a1*a2 value:\n{a1*a2}")
 
+
+a_array = []
+b = [i for i in range(1,51)]
+for i in range(0, len(b), 10):
+    a_array.append(b[i:i+10])
+print(f"Print a_array variable:\n{a_array}\n")
+print(f"Print a_array array:\n{np.array(a_array)}\n")
+
+print(f"Print a_array array shape:\n{np.array(a_array).shape}\n")
+print(f"Print a_array array reshape to (10,5):\n{np.array(a_array).reshape(10,5)}")
+print(f"Print a_array array reshape to (2,25):\n{np.array(a_array).reshape(2,25)}")
