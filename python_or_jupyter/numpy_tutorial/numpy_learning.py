@@ -4,7 +4,7 @@ a = np.array([1,2,3,4,5,6,7,8,9,10])
 
 print(f"Printing a:\n{a}\n")
 print(f"Printing a type:\n{type(a)}\n")
-print(f"Printing a type:\{a[1]}\n")
+print(f"Printing a in position:\n{a[1]}\n")
 
 b = np.array([i for i in range(1,10)] )
 
@@ -23,8 +23,8 @@ d = np.array([[1,2,3],
 
 print(d[0][1])
 print(d[0,1])
-print(d.shape)
-print(d.ndim)
+print("d shape is {d.shape}")
+print("d dimension is {d.ndim}")
 
 e = np.array([[[1,2,3],
              [4,5,6],
